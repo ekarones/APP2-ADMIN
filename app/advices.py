@@ -2,7 +2,7 @@ import requests
 from flask import Blueprint, render_template, request, redirect, url_for
 
 bp_advices = Blueprint("advices", __name__, url_prefix="/advices")
-API_URL = "http://192.168.1.36:8000/advices"
+API_URL = "http://192.168.1.38:8000/advices"
 
 # Ruta principal de consejos
 @bp_advices.route("/", methods=["GET", "POST"])
